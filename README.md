@@ -104,7 +104,8 @@ If this is true, as in the case `3 - 2 == 1` then the function skips to the `els
 If that assertion is false, for example `4 - 2 == 7` then an `AssertionError` is raised by our function.
 We "handle" that error by simply returning `False`.
 
-The above example only solves one of the three constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction (skipping here for brevity).
+The above example only solves one of the three constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction.
+Those assertions are all in the included code, but I've left them out to stop the reader from falling asleep.
 
 ## Solving the Puzzle
 With all the math riff-raff out of the way, you can solve this puzzle by using Python 3 to run my accompanying script called `grid_puzzle.py`.
