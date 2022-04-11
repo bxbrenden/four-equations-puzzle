@@ -87,8 +87,8 @@ Since `p` is a `list` object, the first element has an index of 0.
 That means the first element in the list is called `p[0]`, and the second one is `p[1]`, and the third is `p[2]`.
 
 So, we assert that `p[0] - p[1] == p[2]`.
-If this is true, then the function skips to the `else` section and returns a value of `True`.
-If that assertion is false, then an `AssertionError` is raised by our function.
+If this is true, as in the case `3 - 2 == 1` then the function skips to the `else` section and returns a value of `True`.
+If that assertion is false, for example `4 - 2 == 7` then an `AssertionError` is raised by our function.
 We "handle" that error by simply returning `False`.
 
 The above example only solves one of the three constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction.
