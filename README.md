@@ -51,7 +51,7 @@ There are two main pieces to my simple Python program:
 2. See if a given permutation meets the constraints, thereby solving the puzzle, and print it to the screen if so.
 
 ### Getting All Possible Permutations
-Rather than reinvent the wheel, I used the `permutations()` function from Python's `itertools` module.
+Rather than reinvent the wheel, I used the `permutations` function from Python's `itertools` module.
 This function returns all possible permutations of a list of numbers.
 Here's an example of the code that gets me the list of every way the numbers 1 through 9 can be scrambled:
 ```
