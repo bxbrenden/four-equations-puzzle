@@ -60,6 +60,14 @@ one_thru_nine = list(range(1, 10))
 all_perms = list(permutations(one_thru_nine))
 ```
 
+In the above code, I first generate a list of all numbers 1 through 9 using Python's `range` function.
+Confsingly, `range` is inclusive on the lower bound and exclusive on the upper bound, which means that if I run `range(1, 5)`, it will give me the numbers 1, 2, 3, and 4, but **not** 5.
+
+After I get the list of numbers, I use `permutations` to create a generator of all permutations.
+This generator isn't really a list by itself.
+Instead, it's a piece of code that can be *asked* for a list, one item at a time.
+In order to get the generator to spit out all answers at once, I put the generator into the `list` function.
+
 ### Constraint Checking
 To check if a given permutation solves the puzzle, I used Python assertions.
 An assertion is just a statement that, if true, does nothing and moves on.
