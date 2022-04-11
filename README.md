@@ -34,11 +34,11 @@ When you evaluate the expression `9!`, you get the number 362,880.
 So, that's the number of  "naive guesses" it would take to guarantee that you either get the answer or prove there isn't one.
 
 Of course, the number of possible solutions goes way down when you consider the relationships among the numbers and their operators.
-For example, row 2 divides its first number by its second.
-Since 2, 3, 5, and 7 are prime, none of them can be the "dividend" (number being divided) in row 2, box 1.
-In that same vein, the 9th box is the product of two numbers, so none of the primes can go there since we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
+For example, row two divides its first number by its second.
+Since 2, 3, 5, and 7 are prime, none of them can be the first number in row two.
+In that same vein, the ninth box is the product of two numbers, so none of the primes can go there since we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
 
-So, you could solve the problem like a Sudoku or any other logic puzzle.
+You could solve the Four Equations problem like a Sudoku or any other logic puzzle, given that it has so many logical constraints that it eliminates a lot of possible solutions.
 But, I have a computer, and I don't have the patience for that!
 
 ## Solving it with Python
