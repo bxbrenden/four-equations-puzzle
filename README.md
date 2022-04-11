@@ -74,7 +74,7 @@ Instead, it's a piece of code that can be *asked* for a list, one item at a time
 In order to get the generator to spit out all elements of the list at once, I put the generator into the built-in `list` function.
 
 ### Constraint Checking
-Equipped with a comprehensive list of possible solutions, we now turn to solving the puzzle.
+Equipped with a comprehensive list of possible solutions (and many erroneous ones), we now turn to solving the puzzle.
 To check if a given permutation solves the puzzle, the code uses Python assertions.
 An assertion is just a statement that, if true, does nothing and moves on.
 However, if an assertion proves to be false, it raises an error.
