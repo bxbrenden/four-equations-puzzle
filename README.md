@@ -38,7 +38,7 @@ For example, row two divides its first number by its second.
 Since 2, 3, 5, and 7 are prime, none of them can be the first number in row two.
 In that same vein, the ninth box is the product of two numbers, so none of the primes can go there since we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
 
-You could solve the Four Equations problem like a Sudoku or any other logic puzzle, given that it has so many logical constraints that it eliminates a lot of possible solutions.
+You could solve the Four Equations problem like a Sudoku or any other logic puzzle, given that it has so many logical constraints that help to eliminate a lot of possible solutions.
 But, I have a computer, and I don't have the patience for that!
 
 ## Solving it with Python
