@@ -31,15 +31,15 @@ This can also be written as:
 ```
 
 When you evaluate the expression `9!`, you get the number 362,880.
-So, that's the number of  "naive guesses" it would take to guarantee that you either get the answer or prove there isn't one.
+So, that's the number of naive guesses it would take to guarantee that you either get the answer or prove there isn't one.
 
-Of course, not every permutation in our huge list is truly a potential solution.
+I say "naive" because not every permutation in our huge list is really a potential solution.
 The number of possible solutions goes way down when you consider the mathematical relationships among the numbers and their operators.
 For example, row two divides its first number by its second, i.e. `n1 / n2`.
 Because 2, 3, 5, and 7 are prime numbers, none of them can be the first number in row two.
-In that same vein, the ninth box (row 3, box 3) is the product of two numbers `n1 * n2`, so none of the primes can go there either, as we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
+Similarly, the ninth box (row 3, box 3) is the product of two numbers `n1 * n2`, so none of the primes can go there either, as we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
 
-You could solve the Four Equations problem like a Sudoku or any other logic puzzle, given that it has so many logical constraints that help to eliminate a lot of possible solutions.
+You could solve the Four Equations problem like a Sudoku or any other logic puzzle, given that it has so many logical constraints that eliminate a lot of possible solutions.
 But, I have a computer, and I don't have the patience for that!
 
 ## Solving it with Python
@@ -53,19 +53,20 @@ There are two main pieces to my simple Python program:
 ### Getting All Possible Permutations
 Rather than reinvent the wheel, I used the `permutations` function from Python's `itertools` module.
 This function returns all possible permutations of a list of numbers.
-Here's an example of the code that gets me the list of every way the numbers 1 through 9 can be scrambled:
+
+Here's some example code that tells me every way the numbers 1 through 9 can be scrambled:
 ```
 from itertools import permutations
 
-# Generate a list of 1-9 (up to but excluding 10)
 one_thru_nine = list(range(1, 10))
 
 all_perms = list(permutations(one_thru_nine))
 ```
 
-In the above code, I first generate a list of all numbers 1 through 9 using Python's `range` function.
-`range` takes two arguments in this case: the lower bound (starting number) and upper bound (ending number).
-Confusingly, `range` is inclusive on the lower bound and exclusive on the upper bound, which means that if I run `range(1, 5)`, it will give me the numbers 1, 2, 3, and 4, but **not** 5.
+In the above code, I first generate a list of all numbers 1 through 9 with Python's `range` function.
+`range` takes two arguments here: the lower bound (starting number) and upper bound (ending number).
+Confusingly, `range` is inclusive on the lower bound and exclusive on the upper bound.
+That means that if I run `range(1, 5)`, it'll give me the numbers 1, 2, 3, and 4, but **not** 5.
 Therefore, I use `range(1, 10)` in the example to get 1 through 9.
 
 After I get the list of numbers, I use `permutations` to create a generator of all permutations.
@@ -74,19 +75,16 @@ Instead, it's a piece of code that can be *asked* for a list, one item at a time
 In order to get the generator to spit out all elements of the list at once, I put the generator into the built-in `list` function.
 
 ### Constraint Checking
-Equipped with a comprehensive list of possible solutions (and many erroneous ones), we now turn to solving the puzzle.
+Equipped with a comprehensive list of possible solutions (and many erroneous ones), it's time to solve the puzzle.
 To check if a given permutation solves the puzzle, the code uses Python assertions.
 An assertion is just a statement that is either true or false.
 If it's true, Python does nothing and moves on to executing the next line of code.
-However, if an assertion proves to be false, Python raises an error.
+However, if an assertion is false, Python raises an error.
 This error is called an `AssertionError`.
 
 Here's a snippet that uses an assertion to check if the difference of the first two elements equals the third element:
 ```
 def check_solution(p):
-    """Given a list "p", return True if the first element
-       minus the second element equals the third."""
-
     try:
         assert p[0] - p[1] == p[2]
     except AssertionError:
@@ -99,7 +97,7 @@ In the above code, we make a function called `check_solution`.
 This function takes an arbitrary list called `p`.
 In order to grab an item out of a Python list, you refer to the item by its index.
 An index is the numerical label that represents the item's place in the list.
-The first element has an index of 0, so if my list were `[1,2,3]`, the number 2 would be at index 1, and 3 would be at index 2.
+The first element has an index of 0, so if my list were `[1,2,3]`, the number 1 would be at index 0, the number 2 would be at index 1, and 3 would be at index 2.
 Our list is called `p`, so that means the first element in the list is called `p[0]`, and the second one is `p[1]`, and the third is `p[2]`.
 
 In the code, we assert that `p[0] - p[1] == p[2]`.
@@ -108,10 +106,10 @@ If that assertion is false, for example `4 - 2 == 7` then an `AssertionError` is
 We "handle" that error by simply returning `False`.
 
 The above example only solves one of the four constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction.
-Those assertions are all included in the code, but I've omitted them here to stop the reader from falling asleep.
+Those assertions are included in the code, but I've omitted them here to stop the reader from falling asleep.
 
 ## Solving the Puzzle
-With all the math riff-raff out of the way, you can solve this puzzle.
+With all the math riff-raff out of the way, we can solve this puzzle.
 Assuming you have Python 3 installed, you can run my accompanying script called `grid_puzzle.py` using this command from the CLI:
 ```
 python3 grid_puzzle.py
