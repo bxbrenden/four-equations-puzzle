@@ -31,7 +31,7 @@ Slightly annoyed, I gave up, sanitized my hands, and said I'd solve it later wit
 The way to calculate the total number of possible solutions to this puzzle is to use factorials.
 There are 9 starting blocks to choose from.
 After you choose one, there are 8 remaining blocks to choose from.
-After you choose another, there are 7 remaining blocks, and so on until you run out.
+After you choose another, there are 7 remaining, and so on until you run out.
 
 That means that the number of possible solutions is `9!` or "nine factorial".
 This can also be written as:
