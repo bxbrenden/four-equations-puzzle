@@ -43,6 +43,8 @@ You could solve the Four Equations problem like a Sudoku or any other logic puzz
 But, I have a computer, and I don't have the patience for that!
 
 ## Solving it with Python
+I chose the Python programming language to build my puzzle solver.
+Python is a powerful language, and it's also the one I'm most comfortable using.
 
 There are two main pieces to my simple Python program:
 1. Generate a list of all possible permutations of the numbers 1 through 9.
