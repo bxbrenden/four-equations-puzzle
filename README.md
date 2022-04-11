@@ -61,7 +61,8 @@ all_perms = list(permutations(one_thru_nine))
 ```
 
 In the above code, I first generate a list of all numbers 1 through 9 using Python's `range` function.
-Confsingly, `range` is inclusive on the lower bound and exclusive on the upper bound, which means that if I run `range(1, 5)`, it will give me the numbers 1, 2, 3, and 4, but **not** 5.
+`range` takes two arguments in this case: the lower bound (starting number) and upper bound (ending number).
+Confusingly, `range` is inclusive on the lower bound and exclusive on the upper bound, which means that if I run `range(1, 5)`, it will give me the numbers 1, 2, 3, and 4, but **not** 5.
 
 After I get the list of numbers, I use `permutations` to create a generator of all permutations.
 This generator isn't really a list by itself.
