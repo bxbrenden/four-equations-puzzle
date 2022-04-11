@@ -76,11 +76,12 @@ In order to get the generator to spit out all elements of the list at once, I pu
 ### Constraint Checking
 Equipped with a comprehensive list of possible solutions (and many erroneous ones), we now turn to solving the puzzle.
 To check if a given permutation solves the puzzle, the code uses Python assertions.
-An assertion is just a statement that, if true, does nothing and moves on.
-However, if an assertion proves to be false, it raises an error.
+An assertion is just a statement that is either true or false.
+If it's true, Python does nothing and moves on to executing the next line of code.
+However, if an assertion proves to be false, Python raises an error.
 This error is called an `AssertionError`.
 
-Here's a snippet that shows how to check if the difference of the first two elements equals the third element:
+Here's a snippet that uses an assertion to check if the difference of the first two elements equals the third element:
 ```
 def check_solution(p):
     """Given a list "p", return True if the first element
@@ -95,17 +96,19 @@ def check_solution(p):
 ```
 
 In the above code, we make a function called `check_solution`.
-This function takes a list called `p`.
-Since `p` is a `list` object, the first element has an index of 0.
-That means the first element in the list is called `p[0]`, and the second one is `p[1]`, and the third is `p[2]`.
+This function takes an arbitrary list called `p`.
+In order to grab an item out of a Python list, you refer to the item by its index.
+An index is the numerical label that represents the item's place in the list.
+The first element has an index of 0, so if my list were `[1,2,3]`, the number 2 would be at index 1, and 3 would be at index 2.
+Our list is called `p`, so that means the first element in the list is called `p[0]`, and the second one is `p[1]`, and the third is `p[2]`.
 
-So, we assert that `p[0] - p[1] == p[2]`.
-If this is true, as in the case `3 - 2 == 1` then the function skips to the `else` section and returns a value of `True`.
+In the code, we assert that `p[0] - p[1] == p[2]`.
+If this is true, as in the example case `6 - 4 == 2` then the function skips to the `else` section and returns a value of `True`.
 If that assertion is false, for example `4 - 2 == 7` then an `AssertionError` is raised by our function.
 We "handle" that error by simply returning `False`.
 
-The above example only solves one of the three constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction.
-Those assertions are all in the included code, but I've left them out to stop the reader from falling asleep.
+The above example only solves one of the four constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction.
+Those assertions are all included in the code, but I've omitted them here to stop the reader from falling asleep.
 
 ## Solving the Puzzle
 With all the math riff-raff out of the way, you can solve this puzzle.
@@ -137,7 +140,7 @@ The total number of solutions is 2
 
 ## Conclusion
 To my surprise, there were two solutions to the problem.
-My program started its guesses with 1 in the first box, and the real solutions both started with a 9 in the first box, so it took a lot of attempts for the computer to get it right.
+My program started its guesses with the number 1 in the first box, and the real solutions both started with a 9 in the first box, so it took a lot of attempts for the computer to get it right.
 Specifically, it took exactly 345,295 guesses to get the first solution and two more for the second!
 
 I am now armed with the computational power to brute-force a children's puzzle.
