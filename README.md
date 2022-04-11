@@ -94,7 +94,7 @@ We "handle" that error by simply returning `False`.
 The above example only solves one of the three constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction (skipping here for brevity).
 
 ### Printing the Result
-This part of the code just takes an iterable (list, tuple, etc.) of 9 elements and prints it as a 3 x 3 grid:
+This part of the code just takes list of 9 elements and prints it as a 3 x 3 grid:
 ```
 def render(l):
     """Render a 3x3 grid of a list `l`."""
