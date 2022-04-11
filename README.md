@@ -69,7 +69,7 @@ Confusingly, `range` is inclusive on the lower bound and exclusive on the upper 
 Therefore, I use `range(1, 10)` in the example to get 1 through 9.
 
 After I get the list of numbers, I use `permutations` to create a generator of all permutations.
-This generator isn't really a list by itself.
+This generator is a special object in Python, because it isn't really a list by itself.
 Instead, it's a piece of code that can be *asked* for a list, one item at a time.
 In order to get the generator to spit out all elements of the list at once, I put the generator into the built-in `list` function.
 
