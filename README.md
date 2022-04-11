@@ -1,7 +1,7 @@
 # "Four Equations" Puzzle and Solution
 
 ## Background
-During a visit to [OMSI](https://omsi.edu/) on April 10th, I came across a puzzle that had a 3 x 3 grid and some wooden blocks with the numbers 1 - 9 printed on them.
+During a visit to The Oregon Museum of Science and Industry ([OMSI](https://omsi.edu/) for short) on April 10th, I came across a puzzle that had a 3 x 3 grid and some wooden blocks with the numbers 1 - 9 printed on them.
 The problem was called `Four Equations`, and the goal of the puzzle was to arrange the numbered blocks in a certain pattern that met the following constraints:
 
 | Row or Column    | Constraint |
