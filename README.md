@@ -108,7 +108,11 @@ The above example only solves one of the three constraints, but we can use asser
 Those assertions are all in the included code, but I've left them out to stop the reader from falling asleep.
 
 ## Solving the Puzzle
-With all the math riff-raff out of the way, you can solve this puzzle by using Python 3 to run my accompanying script called `grid_puzzle.py`.
+With all the math riff-raff out of the way, you can solve this puzzle.
+Assuming you have Python 3 installed, you can run my accompanying script called `grid_puzzle.py` using this command from the CLI:
+```
+python3 grid_puzzle.py
+```
 
 The answer gets rendered to the screen as follows:
 ```
