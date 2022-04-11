@@ -98,18 +98,15 @@ This part of the code just takes an iterable (list, tuple, etc.) of 9 elements a
 ```
 def render(l):
     """Render a 3x3 grid of a list `l`."""
-    try:
-        assert len(l) == 9
-    except AssertionError:
-        print(f"Expected list of length 9. Got length {len(l)}")
 
-    first_row = f"{l[0]}  {l[1]}  {l[2]}"
-    second_row = f"{l[3]}  {l[4]}  {l[5]}"
-    third_row = f"{l[6]}  {l[7]}  {l[8]}"
-    leading = " " * len(first_row)
+    first_row = f"{l[0]} - {l[1]} = {l[2]}"
+    second_row = f"{l[3]} ÷ {l[4]} = {l[5]}"
+    third_row = f"{l[6]} + {l[7]} = {l[8]}"
+    leading_1 = " " * 8 + "x"
+    leading_2 = " " * 8 + "="
     padding = '-' * len(first_row)
 
-    rows = [padding, first_row, leading, second_row, leading, third_row, padding]
+    rows = [padding, first_row, leading_1, second_row, leading_2, third_row, padding]
     for row in rows:
         print(row)
 ```
@@ -120,13 +117,13 @@ With all the math riff-raff out of the way, you can solve this puzzle by using P
 The answer gets rendered to the screen as follows:
 ```
 Solution found! 🟢
--------
-9  5  4
-
-6  3  2
-
-1  7  8
--------
+---------
+9 - 5 = 4
+        x
+6 ÷ 3 = 2
+        =
+1 + 7 = 8
+---------
 ```
 
 Since my list of possible solutions grew sequentially, it took a lot of guesses for the computer to get it right.
