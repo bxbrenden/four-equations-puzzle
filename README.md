@@ -40,7 +40,7 @@ This can also be written as:
 ```
 
 When you evaluate the expression `9!`, you get the number 362,880.
-So, that's the number of naive guesses it would take to guarantee that you either get the answer or prove there isn't one.
+That's the number of naive guesses it would take to guarantee that you either get the answer or prove there isn't one.
 
 I say "naive" because not every permutation in our huge list is really a potential solution.
 The number of possible solutions goes way down when you consider the mathematical relationships among the numbers and their operators.
