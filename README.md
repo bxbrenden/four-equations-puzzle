@@ -43,10 +43,9 @@ But, I have a computer, and I don't have time for that!
 
 ## Solving it with Python
 
-There are 3 main pieces to my simple Python program:
+There are two main pieces to my simple Python program:
 1. Generate a list of all possible permutations of the numbers 1 through 9.
-2. See if a given permutation meets the constraints, thereby solving the puzzle.
-3. If the permutation *does* solve the puzzle, print it as a 3 x 3 grid.
+2. See if a given permutation meets the constraints, thereby solving the puzzle, and print it to the screen if so.
 
 ### Getting All Possible Permutations
 Rather than reinvent the wheel, I used the `permutations()` function from Python's `itertools` module.
@@ -92,24 +91,6 @@ If that assertion is false, for example `4 - 2 == 7` then an `AssertionError` is
 We "handle" that error by simply returning `False`.
 
 The above example only solves one of the three constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction (skipping here for brevity).
-
-### Printing the Result
-This part of the code just takes list of 9 elements and prints it as a 3 x 3 grid:
-```
-def render(l):
-    """Render a 3x3 grid of a list `l`."""
-
-    first_row = f"{l[0]} - {l[1]} = {l[2]}"
-    second_row = f"{l[3]} ÷ {l[4]} = {l[5]}"
-    third_row = f"{l[6]} + {l[7]} = {l[8]}"
-    leading_1 = " " * 8 + "x"
-    leading_2 = " " * 8 + "="
-    padding = '-' * len(first_row)
-
-    rows = [padding, first_row, leading_1, second_row, leading_2, third_row, padding]
-    for row in rows:
-        print(row)
-```
 
 ## Solving the Puzzle
 With all the math riff-raff out of the way, you can solve this puzzle by using Python 3 to run my accompanying script called `grid_puzzle.py`.
