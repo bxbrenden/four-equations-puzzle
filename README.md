@@ -35,7 +35,7 @@ So, that's the number of  "naive guesses" it would take to guarantee that you ei
 
 Of course, the number of possible solutions goes way down when you consider the relationships among the numbers and their operators.
 For example, row 2 divides its first number by its second.
-Since 1, 2, 3, 5, and 7 are prime, none of them can go in row 2, box 1.
+Since 2, 3, 5, and 7 are prime, none of them can go in row 2, box 1.
 In that same vein, the 9th box is the product of two numbers, so none of the primes can go there since we don't duplicates, and a prime number only has two factors: one and the prime itself.
 
 So, you could solve the problem like a Sudoku or any other logic puzzle.
