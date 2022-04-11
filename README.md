@@ -15,7 +15,7 @@ To better visualize this, see the below picture of the puzzle with its blocks ju
 ![image of the "Four Equations" puzzle at OMSI](https://github.com/bxbrenden/puzzle-grid/blob/main/four-equations.png)
 
 ## Motivation
-As you might infer from the picture of the wooden blocks and simple, giant print, this was a puzzle for children, and yet I couldn't solve it in the 5-10 minutes I tried.
+As you might infer from the picture of the wooden blocks and simple, gigantic print on the sign, this was a puzzle for children, and yet I couldn't solve it in the 5-10 minutes I tried.
 Slightly annoyed, I gave up, sanitized my hands, and said I'd solve it later with a computer.
 
 ## Number of Possible Solutions
