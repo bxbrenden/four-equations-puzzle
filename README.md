@@ -34,7 +34,7 @@ When you evaluate the expression `9!`, you get the number 362,880.
 So, that's the number of  "naive guesses" it would take to guarantee that you either get the answer or prove there isn't one.
 
 Of course, not every permutation in our huge list is truly a potential solution.
-The number of possible solutions goes way down when you consider the relationships among the numbers and their operators.
+The number of possible solutions goes way down when you consider the mathematical relationships among the numbers and their operators.
 For example, row two divides its first number by its second, i.e. `n1 / n2`.
 Because 2, 3, 5, and 7 are prime numbers, none of them can be the first number in row two.
 In that same vein, the ninth box (row 3, box 3) is the product of two numbers `n1 * n2`, so none of the primes can go there since we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
