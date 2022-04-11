@@ -49,8 +49,8 @@ There are two main pieces to my simple Python program:
 
 ### Getting All Possible Permutations
 Rather than reinvent the wheel, I used the `permutations()` function from Python's `itertools` module.
-This function returns all possible permutations of an iterable like a list of numbers.
-Here's an example of the code that gets me the list:
+This function returns all possible permutations of a list of numbers.
+Here's an example of the code that gets me the list of every way the numbers 1 through 9 can be scrambled:
 ```
 from itertools import permutations
 
