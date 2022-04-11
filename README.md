@@ -6,10 +6,10 @@ The problem was called `Four Equations`, and the goal of the puzzle was to arran
 
 | Row or Column    | Constraint |
 | ---------------- | ---------- |
-| Row 1    | The first number minus the second number equals the third number. |
-| Row 2    | The first number divided by the second number equals the third number. |
-| Row 3    | The first number plus the second number equals the third number. |
-| Column 1 | The first number times the second number equals the third number. |
+| Row 1    | The first number *minus* the second number equals the third number. |
+| Row 2    | The first number *divided by* the second number equals the third number. |
+| Row 3    | The first number *plus* the second number equals the third number. |
+| Column 1 | The first number *times* the second number equals the third number. |
 
 To better visualize this, see the below picture of the puzzle with its blocks jumbled:
 ![image of the "Four Equations" puzzle at OMSI](https://github.com/bxbrenden/puzzle-grid/blob/main/four-equations.png)
