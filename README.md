@@ -80,7 +80,7 @@ An assertion is just a statement that, if true, does nothing and moves on.
 However, if an assertion proves to be false, it raises an error.
 This error is called an `AssertionError`.
 
-Here's a snippet that shows how to check if the first element plus the second element equals the third:
+Here's a snippet that shows how to check if the sum of the first two elements equals the third element:
 ```
 def check_solution(p):
     """Given a list "p", return True if the first element
