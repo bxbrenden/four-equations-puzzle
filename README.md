@@ -67,10 +67,11 @@ Confusingly, `range` is inclusive on the lower bound and exclusive on the upper 
 After I get the list of numbers, I use `permutations` to create a generator of all permutations.
 This generator isn't really a list by itself.
 Instead, it's a piece of code that can be *asked* for a list, one item at a time.
-In order to get the generator to spit out all answers at once, I put the generator into the `list` function.
+In order to get the generator to spit out all elements of the list at once, I put the generator into the `list` function.
 
 ### Constraint Checking
-To check if a given permutation solves the puzzle, I used Python assertions.
+Equipped with a comprehensive list of possible solutions, we now turn to solving the puzzle.
+To check if a given permutation solves the puzzle, the code uses Python assertions.
 An assertion is just a statement that, if true, does nothing and moves on.
 However, if an assertion proves to be false, it raises an error.
 This error is called an `AssertionError`.
