@@ -63,11 +63,11 @@ def main():
     all_permutations = generate_lists()
     for index, p in enumerate(all_permutations):
         solved = check_solution(p)
+        print(f'Trying permutation #{index + 1}...')
         if solved:
             print('Solution found! 🟢')
             render(p)
             break
-        print(f'Trying permutation #{index}...')
 
     # print(f'The length of all permutations is {len(all_permutations)}')
 
