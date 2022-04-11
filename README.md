@@ -117,11 +117,21 @@ Solution found! 🟢
         =
 1 + 7 = 8
 ---------
+Solution found! 🟢
+---------
+9 - 5 = 4
+        x
+6 ÷ 3 = 2
+        =
+7 + 1 = 8
+---------
+The total number of solutions is 2
 ```
 
 ## Conclusion
-Since my list of possible solutions grew sequentially from 1 in the first box, and since the real solution started with a 9 in the first box, it took a lot of guesses for the computer to get it right.
-Specifically, it took exactly 345,295 guesses!
+To my surprise, there were two solutions to the problem.
+My program started its guesses with 1 in the first box, and the real solutions both started with a 9 in the first box, so it took a lot of attempts for the computer to get it right.
+Specifically, it took exactly 345,295 guesses to get the first solution and two more for the second!
 
 I am now armed with the computational power to brute-force a childrens' puzzle.
 The next time someone asks me if I'm smarter than a fifth grader, I can respond more confidently than ever with a resounding, "probably!".

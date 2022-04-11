@@ -62,15 +62,17 @@ def check_solution(p):
 
 def main():
     all_permutations = generate_lists()
+    all_solutions = []
     for index, p in enumerate(all_permutations):
         solved = check_solution(p)
-        print(f'Trying permutation #{index + 1}...')
+        # print(f'Trying permutation #{index + 1}...')
         if solved:
             print('Solution found! 🟢')
             render(p)
-            break
+            # print(f'Took {index + 1} guesses to solve.')
+            all_solutions.append(p)
 
-    # print(f'The length of all permutations is {len(all_permutations)}')
+    print(f'The total number of solutions is {len(all_solutions)}')
 
 
 if __name__ == '__main__':
