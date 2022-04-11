@@ -108,7 +108,7 @@ Solution found! 🟢
 ```
 
 ## Conclusion
-Since my list of possible solutions grew sequentially, and since the real solution started with a 9 in the first box, it took a lot of guesses for the computer to get it right.
+Since my list of possible solutions grew sequentially from 1 in the first box, and since the real solution started with a 9 in the first box, it took a lot of guesses for the computer to get it right.
 Specifically, it took exactly 345,295 guesses!
 
 I am now armed with the computational power to brute-force a childrens' puzzle.
