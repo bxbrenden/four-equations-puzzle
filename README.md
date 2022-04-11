@@ -132,4 +132,4 @@ Specifically, it took exactly 345,295 guesses!
 ## Conclusion
 
 I am now armed with the computational power to brute-force a childrens' puzzle.
-The next time someone asks me if I'm smarter than a fifth grader, I can respond more confidently than ever with a resounding, "Probably!".
+The next time someone asks me if I'm smarter than a fifth grader, I can respond more confidently than ever with a resounding, "probably!".
