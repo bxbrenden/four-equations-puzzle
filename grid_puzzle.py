@@ -8,13 +8,14 @@ def render(l):
     except AssertionError:
         print(f"Expected list of length 9. Got length {len(l)}")
 
-    first_row = f"{l[0]}  {l[1]}  {l[2]}"
-    second_row = f"{l[3]}  {l[4]}  {l[5]}"
-    third_row = f"{l[6]}  {l[7]}  {l[8]}"
-    leading = " " * len(first_row)
+    first_row = f"{l[0]} - {l[1]} = {l[2]}"
+    second_row = f"{l[3]} ÷ {l[4]} = {l[5]}"
+    third_row = f"{l[6]} + {l[7]} = {l[8]}"
+    leading_1 = " " * 8 + "x"
+    leading_2 = " " * 8 + "="
     padding = '-' * len(first_row)
 
-    rows = [padding, first_row, leading, second_row, leading, third_row, padding]
+    rows = [padding, first_row, leading_1, second_row, leading_2, third_row, padding]
     for row in rows:
         print(row)
 
