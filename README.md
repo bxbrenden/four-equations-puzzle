@@ -43,19 +43,19 @@ When you evaluate the expression `9!`, you get the number 362,880.
 That's the number of naive guesses it would take to guarantee that you either get the answer or prove there isn't one.
 
 I say "naive" because not every permutation in our huge list is really a potential solution.
-The number of possible solutions goes way down when you consider the mathematical relationships among the numbers and their operators.
-For example, row two divides its first number by its second, i.e. `n1 / n2`.
+The possibilities shrink when you consider the mathematical relationships among the numbers.
+For example, the second row divides its first number by its second.
 Because 2, 3, 5, and 7 are prime numbers, none of them can be the first number in row two.
-Similarly, the ninth box (row 3, box 3) is the product of two numbers `n1 * n2`, so none of the primes can go there either, as we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
+The ninth box is the product of two numbers, so none of the primes can go there either, as we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
 
-You could solve the Four Equations problem like a Sudoku or any other logic puzzle, given that it has so many logical constraints that eliminate a lot of possible solutions.
+You could solve the Four Equations problem like a Sudoku, given that it has so many logical constraints that eliminate a lot of possible solutions.
 But, I have a computer, and I don't have the patience for that!
 
 ## Solving it with Python
 I chose the Python programming language to build my puzzle solver.
 Python is a powerful language, and it's also the one I'm most comfortable using.
 
-There are two main pieces to my simple Python program:
+There are two main pieces to my Python program:
 1. Generate a list of all possible permutations of the numbers 1 through 9.
 2. See if a given permutation meets the constraints, thereby solving the puzzle, and print it to the screen if so.
 
