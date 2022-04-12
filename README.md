@@ -4,7 +4,7 @@
 A children's puzzle embarrassingly stumped me, so I brute-forced it with a Python program.
 
 ## Background
-During a visit to The Oregon Museum of Science and Industry (a.k.a. [OMSI](https://omsi.edu/)), I noticed a puzzle that had a 3 x 3 grid and some wooden blocks labeled 1 through 9.
+During a visit to a museum called [OMSI](https://omsi.edu/)), I noticed a puzzle that had a 3 x 3 grid and some wooden blocks labeled 1 through 9.
 The grid looked like this:
 ```
 ☐ - ☐ = ☐
