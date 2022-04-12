@@ -20,14 +20,6 @@ def render(l):
         print(row)
 
 
-def verify_set(s):
-    """Make sure only range(9) nums in s."""
-    golden = set(list(range(1, 10)))
-    st = set(s)
-
-    return st == golden
-
-
 def generate_lists():
     """Generate all permutations of range(1, 10)."""
     all_perms = list(permutations(range(1, 10)))
