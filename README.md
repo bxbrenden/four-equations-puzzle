@@ -60,7 +60,7 @@ Python is a powerful language, and it's also the one I'm most comfortable using.
 
 There are two main pieces to my Python program:
 1. Generate a list of all possible permutations of the numbers 1 through 9.
-2. See if a given permutation meets the constraints, thereby solving the puzzle, and print it to the screen if so.
+2. See if a given permutation solves the puzzle, and print it if so.
 
 ### Getting All Possible Permutations
 Rather than reinvent the wheel, I used the `permutations` function from Python's `itertools` module.
