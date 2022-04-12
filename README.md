@@ -14,7 +14,7 @@ The grid looked like this:
 ☐ + ☐ = ☐
 ```
 
-The puzzle was called `Four Equations`, and the goal of it was to arrange the numbered blocks in a pattern that met the following constraints:
+The puzzle was called `Four Equations`, and the goal of it was to arrange the blocks in a pattern that met the following constraints:
 
 | Row or Column    | Constraint |
 | ---------------- | ---------- |
