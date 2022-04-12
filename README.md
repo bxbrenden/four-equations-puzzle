@@ -28,7 +28,7 @@ Here's a picture of the puzzle with its blocks jumbled:
 
 ## Motivation
 As you might infer from the picture of the wooden blocks and simple, gigantic print on the sign, this was a puzzle for children, and yet I couldn't solve it in the 5-10 minutes I tried.
-Slightly annoyed, I gave up, sanitized my hands, and said I'd solve it later with a computer.
+Slightly annoyed, I gave up, sanitized my hands, and vowed I'd solve it later with a computer.
 
 ## Number of Possible Solutions
 The way to calculate the total number of possible solutions to this puzzle is to use factorials.
