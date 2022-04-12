@@ -48,7 +48,7 @@ That's the number of naive guesses it would take to guarantee that you either ge
 I say "naive" because not every permutation in our huge list is really a potential solution.
 The possibilities shrink when you consider the mathematical relationships among the numbers.
 For example, the second row divides its first number by its second.
-Because 2, 3, 5, and 7 are prime numbers, none of them can be the first number in row two.
+Because 2, 3, 5, and 7 are prime numbers, none of them can be the first number (dividend) in row two.
 The ninth box is the product of two numbers, so none of the primes can go there either, as we don't have any duplicates, and a prime number only has two factors: one and the prime itself.
 
 You could solve the Four Equations problem like a Sudoku, given that it has so many logical constraints that eliminate a lot of possible solutions.
