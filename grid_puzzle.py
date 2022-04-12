@@ -59,7 +59,7 @@ def main():
         solved = check_solution(p)
         # print(f'Trying permutation #{index + 1}...')
         if solved:
-            print('Solution found! 🟢')
+            print('Solution found! 🔥')
             render(p)
             # print(f'Took {index + 1} guesses to solve.')
             all_solutions.append(p)
