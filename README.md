@@ -50,6 +50,7 @@ But, I have a computer, and I don't have the patience for that!
 
 ## Solving it with Python
 I chose the Python programming language to build my puzzle solver, since it's powerful and easy to use.
+If you don't care about the code, you can safely skip to the section entitled "Solving the Puzzle".
 
 There are two main pieces to my Python program:
 1. Get a list of all possible permutations of the numbers 1 through 9.
