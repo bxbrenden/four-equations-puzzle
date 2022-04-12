@@ -15,14 +15,7 @@ The grid looked like this:
 ```
 
 The puzzle was called `Four Equations`, and the goal of it was to arrange the blocks so that the top row was a difference (A - B = C), the middle row was a quotient (D ÷ E = F), the bottom row was a sum (G + H = I), and the right column was a product (C × F = I).
-All four equations had to be solved at the same time, and you can use each number only once.
-
-| Row or Column    | Constraint |
-| ---------------- | ---------- |
-| Row 1    | The first number *minus* the second number equals the third number. |
-| Row 2    | The first number *divided by* the second number equals the third number. |
-| Row 3    | The first number *plus* the second number equals the third number. |
-| Column 1 | The first number *times* the second number equals the third number. |
+All four equations had to be solved at the same time, and you could use each number only once.
 
 Here's a picture of the puzzle with its blocks jumbled:
 ![image of the "Four Equations" puzzle at OMSI](https://github.com/bxbrenden/puzzle-grid/blob/main/four-equations.png)
