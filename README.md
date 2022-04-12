@@ -1,4 +1,4 @@
-# "Four Equations" Puzzle and Solution
+# Brute-forcing a Museum's Math Puzzle with Python
 
 ## TL;DR
 A children's puzzle embarrassingly stumped me, so I brute-forced it with a Python program.
