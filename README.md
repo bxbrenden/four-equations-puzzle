@@ -1,7 +1,7 @@
 # Brute-forcing a Museum's Math Puzzle with Python
 
 ## TL;DR
-A children's puzzle embarrassingly stumped me, so I brute-forced it with a Python program.
+A seemingly simple math puzzle stumped me, so I brute-forced it with a Python program.
 
 ## Background
 During a visit to a museum called [OMSI](https://omsi.edu/), I noticed a puzzle that had a 3 x 3 grid and some wooden blocks labeled 1 through 9.
@@ -141,6 +141,9 @@ The total number of solutions is 2
 To my surprise, there were two solutions to the problem.
 My program started guessing with the number 1 in the first box, and the real solutions both started with a 9 in the first box, so it took a lot of attempts to get it right.
 Specifically, it took 345,295 guesses to get the first solution and two more for the second!
+
+It took about 45 minutes of coding and 50-70 lines of code to solve this problem.
+While I could have made paper cutouts and solved this by hand, I enjoyed doing it more with code, as it let me be sure there were only two answers.
 
 I am now armed with the computational power to brute-force a children's puzzle.
 The next time someone asks me if I'm smarter than a fifth grader, I can respond more confidently than ever with a resounding, "probably!".
