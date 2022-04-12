@@ -63,15 +63,15 @@ There are two main pieces to my Python program:
 2. See if a given permutation solves the puzzle, and print it if so.
 
 ### Getting All Possible Permutations
+I want to find every way that the numbers 1 through 9 can be scrambled.
 Rather than reinvent the wheel, I used the `permutations` function from Python's `itertools` module.
 This function returns all possible permutations of a list of numbers.
 
-Here's some example code that tells me every way the numbers 1 through 9 can be scrambled:
+Here's some example code that achieves this:
 ```
 from itertools import permutations
 
 one_thru_nine = list(range(1, 10))
-
 all_perms = list(permutations(one_thru_nine))
 ```
 
@@ -84,14 +84,14 @@ Therefore, I use `range(1, 10)` in the example to get 1 through 9.
 After I get the list of numbers, I use `permutations` to create a generator of all permutations.
 This generator is a special object in Python, because it isn't really a list by itself.
 Instead, it's a piece of code that can be *asked* for a list, one item at a time.
-In order to get the generator to spit out all elements of the list at once, I put the generator into the built-in `list` function.
+I put the generator into the built-in `list` function to make it spit out all items at once.
 
 ### Constraint Checking
 Equipped with a comprehensive list of possible solutions (and many erroneous ones), it's time to solve the puzzle.
 To check if a given permutation solves the puzzle, the code uses Python assertions.
 An assertion is just a statement that is either true or false.
-If it's true, Python does nothing and moves on to executing the next line of code.
-However, if an assertion is false, Python raises an error.
+If the statement's true, Python does nothing and moves on to executing the next line of code.
+However, if the statement is false, Python raises an error.
 This error is called an `AssertionError`.
 
 Here's a snippet that uses an assertion to check if the difference of the first two elements equals the third element:
@@ -106,28 +106,28 @@ def check_solution(p):
 ```
 
 In the above code, we make a function called `check_solution`.
-This function takes an arbitrary list called `p`.
+This function takes a list called `p`.
 In order to grab an item out of a Python list, you refer to the item by its index.
 An index is the numerical label that represents the item's place in the list.
 The first element has an index of 0, so if my list were `[1,2,3]`, the number 1 would be at index 0, the number 2 would be at index 1, and 3 would be at index 2.
-Our list is called `p`, so that means the first element in the list is called `p[0]`, and the second one is `p[1]`, and the third is `p[2]`.
+Our list is called `p`, so the first element in the list is called `p[0]`, and the second one is `p[1]`, etc.
 
 In the code, we assert that `p[0] - p[1] == p[2]`.
 If this is true, as in the example case `6 - 4 == 2` then the function skips to the `else` section and returns a value of `True`.
 If that assertion is false, for example `4 - 2 == 7` then an `AssertionError` is raised by our function.
 We "handle" that error by simply returning `False`.
 
-The above example only solves one of the four constraints, but we can use assertions to test addition, division, and multiplication just like we did for subtraction.
+The above example only solves one of the four constraints, but we can test addition, division, and multiplication just like we did for subtraction.
 Those assertions are included in the code, but I've omitted them here to stop the reader from falling asleep.
 
 ## Solving the Puzzle
 With all the math riff-raff out of the way, we can solve this puzzle.
-Assuming you have Python 3 installed, you can run my accompanying script called `grid_puzzle.py` using this command from the CLI:
+Assuming you have Python 3 installed, you can run my accompanying script from the CLI like so:
 ```
 python3 grid_puzzle.py
 ```
 
-The answer gets rendered to the screen as follows:
+The answer will be rendered to the screen:
 ```
 Solution found! 🟢
 ---------
@@ -150,7 +150,7 @@ The total number of solutions is 2
 
 ## Conclusion
 To my surprise, there were two solutions to the problem.
-My program started its guesses with the number 1 in the first box, and the real solutions both started with a 9 in the first box, so it took a lot of attempts for the computer to get it right.
+My program started guessing with the number 1 in the first box, and the real solutions both started with a 9 in the first box, so it took a lot of attempts for the computer to get it right.
 Specifically, it took exactly 345,295 guesses to get the first solution and two more for the second!
 
 I am now armed with the computational power to brute-force a children's puzzle.
