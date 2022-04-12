@@ -143,6 +143,7 @@ My program started guessing with the number 1 in the first box, and the real sol
 Specifically, it took 345,295 guesses to get the first solution and two more for the second!
 
 It took about 45 minutes of coding and 50-70 lines of code to solve this problem.
+The actual execution of the program takes less than a second!
 While I could have made paper cutouts and solved this by hand, I enjoyed doing it more with code, as it let me be sure there were only two answers.
 If this article makes it to publication in *2600*, you can find the complete Python source code to solve the Four Equations puzzle at the following link:
 ```
