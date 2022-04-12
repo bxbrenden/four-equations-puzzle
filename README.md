@@ -14,7 +14,8 @@ The grid looked like this:
 ☐ + ☐ = ☐
 ```
 
-The puzzle was called `Four Equations`, and the goal of it was to arrange the blocks in a pattern that met the following constraints:
+The puzzle was called `Four Equations`, and the goal of it was to arrange the blocks so that the top row was a difference (A - B = C), the middle row was a quotient (D ÷ E = F), the bottom row was a sum (G + H = I), and the right column was a product (C × F = I).
+All four equations had to be solved at the same time, and you can use each number only once.
 
 | Row or Column    | Constraint |
 | ---------------- | ---------- |
