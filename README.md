@@ -25,12 +25,12 @@ As you might infer from the picture of the wooden blocks and simple, gigantic pr
 Slightly annoyed, I gave up, sanitized my hands, and vowed I'd solve it later with a computer.
 
 ## Number of Possible Solutions
-The way to calculate the total number of possible solutions to this puzzle is with factorials.
+The way to calculate the total number of possible block arrangements in this puzzle is with factorials.
 There are 9 starting blocks to choose from.
 After you choose one, there are 8 remaining blocks.
 After you choose another, there are 7 remaining, and so on until you run out.
 
-That means that the number of possible solutions is `9!` or "nine factorial".
+That means that the number of possible arrangements is `9!` or "nine factorial".
 This can be written as:
 ```
 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1
@@ -144,6 +144,10 @@ Specifically, it took 345,295 guesses to get the first solution and two more for
 
 It took about 45 minutes of coding and 50-70 lines of code to solve this problem.
 While I could have made paper cutouts and solved this by hand, I enjoyed doing it more with code, as it let me be sure there were only two answers.
+If this article makes it to publication in *2600*, you can find the complete Python source code to solve the Four Equations puzzle at the following link:
+```
+https://github.com/bxbrenden/four-equations-puzzle
+```
 
 I am now armed with the computational power to brute-force a children's puzzle.
 The next time someone asks me if I'm smarter than a fifth grader, I can respond more confidently than ever with a resounding, "probably!".
