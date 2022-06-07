@@ -118,7 +118,7 @@ python3 grid_puzzle.py
 
 The answer will be rendered to the screen:
 ```
-Solution found! 🟢
+Solution found! 🔥
 ---------
 9 - 5 = 4
         x
@@ -126,7 +126,7 @@ Solution found! 🟢
         =
 1 + 7 = 8
 ---------
-Solution found! 🟢
+Solution found! 🔥
 ---------
 9 - 5 = 4
         x
