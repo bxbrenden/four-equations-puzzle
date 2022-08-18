@@ -3,6 +3,9 @@
 ## TL;DR
 A seemingly simple math puzzle stumped me, so I brute-forced it with a Python program.
 
+## Publication Info
+This article was originally published _2600: The Hacker Quarterly_, Volume Thirty-Nine, Number Two, August 2022.
+
 ## Background
 During a visit to a museum called [OMSI](https://omsi.edu/), I noticed a puzzle that had a 3 x 3 grid and some wooden blocks labeled 1 through 9.
 The grid looked like this:
